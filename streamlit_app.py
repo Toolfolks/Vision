@@ -13,13 +13,13 @@ def encode_image(image_file):
     return base64.b64encode(image_file.getvalue()).decode("utf-8")
 
 
-st.set_page_config(page_title="Guttering Quote", layout="centered", initial_sidebar_state="collapsed")
+st.set_page_config(page_title="Scientific Image Analyst", layout="centered", initial_sidebar_state="collapsed")
 # Streamlit page setup
-st.title("🧪 Rough Estimae From Image` 👀")
+st.title("🧪 Scientific Image Analyst: `GPT-4 Turbo with Vision` 👀")
 
 
 # Retrieve the OpenAI API Key from secrets
-api_key = db.secrets.get("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")
+api_key = "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"
 
 # Initialize the OpenAI client with the API key
 client = OpenAI(api_key=api_key)
